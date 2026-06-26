@@ -18,10 +18,15 @@ logging.basicConfig(
 
 def extract_data(file_path):
 
-    logging.info("Reading dataset...")
+    try:
+        logging.info("Reading dataset...")
 
-    dataframe = pd.read_csv(file_path)
+        dataframe = pd.read_csv(file_path)
 
-    logging.info("Dataset loaded successfully.")
+        logging.info("Dataset loaded successfully.")
 
-    return dataframe
+        return dataframe
+
+    except Exception as error:
+        logging.error(f"Error while reading dataset: {error}")
+        raise

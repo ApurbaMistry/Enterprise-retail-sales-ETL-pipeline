@@ -1,5 +1,6 @@
 from scripts.extract import extract_data
 from scripts.validate import validate_data
+from scripts.clean import clean_data
 
 
 def main():
@@ -9,6 +10,8 @@ def main():
     dataframe = extract_data(file_path)
 
     dataframe = validate_data(dataframe)
+
+    dataframe = clean_data(dataframe)
 
     print(dataframe.head())
 

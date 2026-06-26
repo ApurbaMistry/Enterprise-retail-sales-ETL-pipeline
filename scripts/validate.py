@@ -17,7 +17,10 @@ def validate_data(dataframe):
     duplicate_rows = dataframe.duplicated().sum()
 
     logging.info(f"Duplicate Rows: {duplicate_rows}")
-    
+
+    print("\nData Types")
+    print(dataframe.dtypes)
+
 
     logging.info("Data validation completed.")
 

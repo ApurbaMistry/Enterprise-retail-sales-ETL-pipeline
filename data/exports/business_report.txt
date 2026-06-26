@@ -1,0 +1,8 @@
+BUSINESS REPORT
+========================================
+Total Sales      : 2,296,195.59
+Total Profit     : 286,241.42
+Average Sales    : 230.15
+Highest Sale     : 22,638.48
+Lowest Sale      : 0.44
+Total Orders     : 9977

@@ -3,6 +3,7 @@ from scripts.validate import validate_data
 from scripts.clean import clean_data
 from scripts.transform import transform_data
 from scripts.load import load_data
+from scripts.report import generate_report
 
 
 def main():
@@ -18,6 +19,8 @@ def main():
     dataframe = transform_data(dataframe)
 
     load_data(dataframe)
+
+    generate_report(dataframe)
 
     print(dataframe.head())
 
